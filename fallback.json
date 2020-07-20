@@ -1,0 +1,10 @@
+{
+  "articles": [
+    {
+      "title": "failed to fetch articles",
+      "url": "",
+      "urlToImage": "icons/caution.png",
+      "description": "Try loading the page again when you're online."
+    }
+  ]
+}

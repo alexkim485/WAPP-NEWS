@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WAPP-NEWS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icons/news-icon.png" width="50" height="50">
+    <style type="text/css">
+body{
+}
+.container{
+    max-width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.navbar{
+    font-size: 2.0em;
+    font-weight: bold;
+}
+.txt-cap{
+    text-transform: capitalize;
+}
+.txt-ct{
+    text-align: center;
+}
+.small{
+    font-size: 50%;
+    font-weight: 200;
+    line-height: 1;
+    color: #c1c8e4;
+}
+.txt-bold{
+    font-weight: bold;
+}
+/*.navbar-brand{
+    font-size: 1.5em;
+}*/
+.fx-d{
+    display: flex;
+}
+.fx-col{
+    flex-direction: column;
+}
+.fx-ct-items{
+    align-items: center;
+}
+.fx-j-ct{
+    justify-content: center;
+}
+.fx-j-ard{
+    justify-content: space-around;
+}
+.fx-j-btw{
+    justify-content: space-between;
+}
+.fx-j-end{
+    justify-content: flex-end;
+}
+.fx-bs-items{
+    align-items: baseline;
+}
+.fx-str{
+    flex: 0.5 0 auto;
+}
+.search-bar
+{
+    width: 100%;
+    font-size: 1em;
+    border: 0px solid #c1c8e4;
+    outline: none;
+}
+.hide{
+    display: none;
+}
+.sidenav{
+    position: fixed;
+    top: 70px;
+}
+.sidenav a{
+    display: block;
+}
+.img-rwd{
+    width: 100%;
+}
+.img-rwd-1{
+    width: 100%;
+    height: 100%;
+}
+.d-board-img{
+    height: 300px;
+}
+.pst-rv{
+    position: relative;
+}
+.pst-abs{
+    position: absolute;
+}
+/*margins pad & radius*/
+.mr-16{
+    margin:16px; 
+}
+.mr-lr{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.pd{
+    padding: 8px;
+}
+.pd-16{
+    padding: 16px;
+}
+.rd-8{
+    border-radius: 8px;
+}
+.rd-tp{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px; 
+}
+@media only screen and (max-width: 600px) {
+    .hide-sm{
+        display: none;
+    }
+    .fx-col-rv{
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .fx-col-rwd{
+        flex-direction: row;
+    }
+
+    /* Flex display widths*/
+    .fx-1 {flex: 8.33%;}
+    .fx-2 {flex: 16.66%;}
+    .fx-3 {flex: 25%;}
+    .fx-4 {flex: 33.33%;}
+    .fx-5 {flex: 41.66%;}
+    .fx-6 {flex: 50%;}
+    .fx-7 {flex: 58.33%;}
+    .fx-8 {flex: 66.66%;}
+    .fx-9 {flex: 75%;}
+    .fx-10 {flex: 83.33%;}
+    .fx-11 {flex: 91.66%;}
+    .fx-12 {flex: 100%;}
+
+    .txt-l-rwd{
+        text-align: left;
+    }
+    .hide-md{
+        display: none;
+    }
+    .pd-tp-64-rwd{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .pd-tp-96-rwd{
+        padding-top: 96px;
+        padding-bottom: 96px;
+
+    }
+}
+</style>
+<body class="container">
+   <header>
+    <nav id="nav"></nav>
+</header>
+<hr>
+<div style="margin-top: 10px;">
+<header>
+<div class="fx-d">
+    <div class="fx-10">
+        <div class="fx-d fx-col-rwd">
+            <div class="fx-4 card card-hover bg-white rd-8 mr-16">
+                <select class=" pd-8 rd-8 mr-16" id="sources"></select> 
+            </div>
+            
+            
+        </div>
+        
+    </div>
+    
+</div>
+</header>
+</div>
+
+<main class="categories">
+        <!--<div class="fx-d">
+            <div class="fx-10">
+                <div class="fx-d fx-col fx-col-rwd">
+                    <div class="fx-4 card card-hover bg-white rd-8 mr-16">
+                         </div>
+                     </div>
+                 </div>
+             </div>-->
+    </main>
+    <div style="margin-top:10px;">
+        
+    </div>
+    <footer id="foot01" class="categories">
+   
+        
+    </footer>
+    <script src="app.js"></script>
+   <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

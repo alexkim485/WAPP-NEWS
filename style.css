@@ -1,0 +1,49 @@
+
+body {
+    font-weight: 300;
+    padding: 10px;
+    margin: 8px;
+    background-color:;
+    background-image: url('');
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+main {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: max-content;
+    grid-auto-flow: row dense;
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.article{
+    font-size: 13px;
+}
+.article h2 {
+  font-family: Tahoma;
+  font-weight: 800;
+}
+
+.article a,
+.article a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.article img {
+  width: 100%;
+}
+.categories{
+    border:1px #ccc dotted;
+    padding:10px;
+    border-radius: 15px;
+}
