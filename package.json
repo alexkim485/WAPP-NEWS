@@ -1,5 +1,5 @@
 {
-  "name": "WAPP",
+  "name": "waap",
   "version": "4.0.1",
   "description": "WAPP-NEWS ",
   "main": "app.js",
@@ -20,7 +20,7 @@
   "author": "xela",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alexkim485/alexkim485/WAPP-NEWS.git/issues"
+    "url": "https://github.com/alexkim485/WAPP-NEWS.git/issues"
   },
-  "homepage": "https://github.com/alexkim485/alexkim485/WAPP-NEWS.io"
+  "homepage": "https://alexkim485.github.io/WAPP-NEWS/"
 }
