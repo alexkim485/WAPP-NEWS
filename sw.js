@@ -4,7 +4,7 @@ const staticAssets = [
   './',
   './app.js',
   './app2.js',
-  './style.css',
+  './*.css',
   './fallback.json',
   './icons/caution.png'
 ];

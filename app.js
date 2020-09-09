@@ -21,7 +21,7 @@ window.addEventListener('load', e => {
 window.addEventListener('online', () => updateNews(sourceSelector.value));
 
 async function updateNewsSources() {
-  const response = await fetch(`https://newsapi.org/v2/sources?apiKey=${apiKey}`);
+  const response = await fetch(`https://newsapi.org/v1/sources?apiKey=${apiKey}`);
   const json = await response.json();
   sourceSelector.innerHTML =
     json.sources
@@ -31,7 +31,7 @@ async function updateNewsSources() {
 
 async function updateNews(source = defaultSource) {
   newsArticles.innerHTML = '';
-  const response = await fetch(`https://newsapi.org/v2/top-headlines?sources=${source}&sortBy=top&apiKey=${apiKey}`);
+  const response = await fetch(`https://newsapi.org/v1/top-headlines?sources=${source}&sortBy=top&apiKey=${apiKey}`);
   const json = await response.json();
   newsArticles.innerHTML =
     json.articles.map(createArticle).join('\n');
@@ -47,10 +47,11 @@ function createArticle(article) {
     <div class="article">
     <a href="${article.url}" >
      <h2>${article.title}</h2>
+      <h4>${article.author}<h4>
         <img src="${article.urlToImage}" alt="${article.title}">
         <p>${article.description}</p>
         <a href="${article.url}" class="btn btn-c-1 btn-blk rd-8"><i class=""></i>Read Full Article</a>
-        
+
       </a>
     </div>
     </div>

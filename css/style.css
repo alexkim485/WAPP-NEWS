@@ -421,7 +421,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 *
  =======================================================================*/
 @media only screen and (max-width: 600px) {
-    .hide-sm{
+    .show-sm{
         display: none;
     }
     .fx-col-rv{
